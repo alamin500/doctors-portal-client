@@ -3,6 +3,7 @@ import Navigation from "../../Shared/Navigation/Navigation";
 import AppoinmentBanner from "../AppoinmentBanner/AppoinmentBanner";
 import Banner from "../Banner/Banner";
 import ExceptionalDeltal from "../ExceptionalDental/ExceptionalDeltal";
+import Footer from "../Footer/Footer";
 import OurDoctors from "../OurDoctors/OurDoctors";
 import Services from "../Services/Services";
 import Testimonial from "../Testimonial/Testimonial";
@@ -17,6 +18,7 @@ const Home = () => {
       <AppoinmentBanner></AppoinmentBanner>
       <Testimonial></Testimonial>
       <OurDoctors></OurDoctors>
+      <Footer></Footer>
     </div>
   );
 };

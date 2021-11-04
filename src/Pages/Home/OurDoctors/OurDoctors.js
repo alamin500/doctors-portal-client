@@ -5,19 +5,20 @@ import doctor from "../../../images/doctor-small.png";
 const OurDoctors = () => {
   return (
     <Container>
+      <Typography
+        sx={{ fontWeight: "bold" }}
+        style={{ color: "#4ACEDB" }}
+        variant="h5"
+        gutterBottom
+        component="div"
+      >
+        Our Doctors
+      </Typography>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={4}>
-          <Typography
-            style={{ color: "#4ACEDB" }}
-            variant="h5"
-            gutterBottom
-            component="div"
-          >
-            Our Doctors
-          </Typography>
           <img style={{ width: "100%" }} src={doctor} alt="" />
           <Typography variant="h6" gutterBottom component="div">
-            h6. Heading
+            Dr. Caudi
           </Typography>
           <Typography variant="caption" display="block" gutterBottom>
             caption text
