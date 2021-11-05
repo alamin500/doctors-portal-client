@@ -11,7 +11,6 @@ import Testimonial from "../Testimonial/Testimonial";
 const Home = () => {
   return (
     <div>
-      <Navigation></Navigation>
       <Banner></Banner>
       <Services></Services>
       <ExceptionalDeltal></ExceptionalDeltal>

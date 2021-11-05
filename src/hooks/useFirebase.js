@@ -1,4 +1,4 @@
-import initializeFirebase from "../Pages/Login/Login/Firebase/firebase.init";
+import initializeFirebase from "../Pages/Login/Firebase/firebase.init";
 import { useState, useEffect } from "react";
 import {
   getAuth,
@@ -13,6 +13,7 @@ initializeFirebase();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
+  console.log(user.email);
   const [isLoading, setIsLoading] = useState(true);
   const [authError, setAuthError] = useState("");
 

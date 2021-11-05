@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import login from "../../images/login.png";
 const Login = () => {
   const [loginData, setLoginData] = useState({});
+  const {user, loginUser, isLoading, authError}
   const handleOnChange = (e) => {
     const field = e.target.name;
     const value = e.target.value;
