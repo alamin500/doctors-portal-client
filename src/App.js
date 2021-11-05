@@ -6,28 +6,31 @@ import Login from "./Pages/Login/Login";
 
 import Register from "./Pages/Login/Register/Register";
 import Navigation from "./Pages/Shared/Navigation/Navigation";
+import AuthProvider from "./Contexts/AuthProvider/AuthProvider";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navigation />
-        <Switch>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/register">
-            <Register></Register>
-          </Route>
-          <Route path="/appointment">
-            <Appoinment />
-          </Route>
+      <AuthProvider>
+        <Router>
+          <Navigation />
+          <Switch>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+            <Route path="/appointment">
+              <Appoinment />
+            </Route>
 
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
