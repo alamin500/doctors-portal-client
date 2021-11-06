@@ -40,7 +40,6 @@ const BookingModal = ({
     const field = e.target.name;
     const value = e.target.value;
     const newInfo = { ...bookingInfo };
-    console.log(newInfo);
     newInfo[field] = value;
     setBookingInfo(newInfo);
   };
