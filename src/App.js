@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home/Home/Home";
 import Appoinment from "./Pages/Appoinment/Appoinment";
 import Login from "./Pages/Login/Login";
-
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Register from "./Pages/Login/Register/Register";
 import Navigation from "./Pages/Shared/Navigation/Navigation";
 import AuthProvider from "./Contexts/AuthProvider/AuthProvider";
@@ -21,9 +21,9 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="/appointment">
+            <PrivateRoute path="/appointment">
               <Appoinment />
-            </Route>
+            </PrivateRoute>
 
             <Route path="/">
               <Home />
